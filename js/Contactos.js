@@ -13,7 +13,7 @@ $('#consultarContactos').click(function(){
 });
 
 function contactosExito(){
-	for(var i =0; izcontactos.length; i++){
+	for(var i =0; i<contactos.length; i++){
 		if (contactos[i].displayName) {
 			$('#listaContactos').append('<li>' +contactos[i].displayName+'</li>');
 
