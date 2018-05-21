@@ -39,31 +39,29 @@
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Hello World</title>
+    <title>Contactos</title>
 </head>
 
 <body>
     <div data-role="page"  id="paginaContactos">
-    	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Atras">
-    		<h1>Lista de Contactos</h1>
-    	</div>
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Atras">
+            <h1>Lista de Contactos</h1>
+        </div>
 
-    	<div data-role="main" class="ui-content">
-    		<button class="ui-btn" id="consultarContactos">Consultar Contactos</button>
+        <div data-role="main" class="ui-content">
+            <a href="#paginaContactos" class="ui-btn">Consultar Contactos</a>
+            <button class="ui-btn" id="consultarContactos">Consultar Contactos</button>
 
-    		<div class="ui-content">
-    			<ul data-role="listview" id="listaContactos" data-filter="true">
-    				
-    			</ul>
-    		</div>
-    	</div>
+            <div class="ui-content">
+                <ul data-role="listview" id="listaContactos" data-filter="true">
+                    
+                </ul>
+            </div>
+        </div>
     </div>
-
-
-
-
     <script type="text/javascript" src="cordova.js"></script>
- 	<script type="text/javascript" src="js/Contactos.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
         app.initialize();
     </script>
 </body>
